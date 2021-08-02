@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: #eaeaea;
+}
+.nav ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 14px 16px;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+ul li:hover{
+    background: white;
+    color: blue;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.title-content{
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.section{
+    display: flex;
+    margin-top: 50px;
+}
+.partition1{
+    width: 50%;
+    height: 300px;
+    background: url('../s/img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.partition2{
+    width: 50%;
+    height: 300px;
+    background: url('../s/img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* responsive codes */
+@media screen and (max-width:400px){
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-content{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 5px;
+    }
+    .partition1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .partition2{
+        width: 100%;
+    }
+}
